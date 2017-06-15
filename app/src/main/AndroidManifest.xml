@@ -9,6 +9,11 @@
         android:roundIcon="@drawable/can9"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <supports-screens android:smallScreens="false"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:xlargeScreens="false"
+            />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

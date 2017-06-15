@@ -1,80 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ViewSwitcher
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.blakestiller.appfeatures.MainActivity"
     android:id="@+id/viewSwitcher1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_alignParentLeft="true"
     android:layout_alignParentTop="true"
-    android:inAnimation="@android:anim/slide_in_left" >
+    android:inAnimation="@android:anim/slide_in_left"
+    tools:context="com.blakestiller.appfeatures.MainActivity"
+    tools:ignore="RtlHardcoded">
+
+    <TableLayout
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText2"
+                android:layout_marginTop="68dp"
+                android:text="@string/textView"
+                android:textSize="25dp"
+                tools:ignore="ObsoleteLayoutParam,SpUsage"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="307dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessLeaf">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessLeaf">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:text="@string/button1"
+                tools:ignore="ObsoleteLayoutParam" />
+        </TableRow>
+    </TableLayout>
 
     <RelativeLayout
         android:id="@+id/view1"
         android:layout_width="wrap_content"
-        android:layout_height="488dp"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp"
-    android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="81dp">
 
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:hint="@string/editText"
-        android:inputType="text"
-        android:layout_alignParentTop="true" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/editText"
+            android:inputType="text" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/editText2"
-        android:inputType="text"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="24dp" />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/editText2"
+            android:inputType="text" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/textView"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="307dp"
-        android:layout_marginTop="68dp"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="68dp"
+            android:text="@string/textView"
+            android:textSize="25dp"
+            tools:ignore="SpUsage"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="307dp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:layout_marginTop="23dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="23dp"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ContentDescription" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:text="@string/button"
-        android:theme="@style/widgetTheme"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="34dp"
+            android:text="@string/button"
+            android:theme="@style/widgetTheme" />
 
         <Button
             android:id="@+id/button1"
@@ -88,47 +144,4 @@
 
     </RelativeLayout>
 
-    <TableLayout
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/textView"
-                android:textSize="25dp"
-                tools:layout_editor_absoluteX="102dp"
-                tools:layout_editor_absoluteY="307dp"
-                android:layout_marginTop="68dp"
-                android:layout_below="@+id/editText2"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-            </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dp"
-                android:text="@string/button1" />
-        </TableRow>
-    </TableLayout>
-    </ViewSwitcher>
+</ViewSwitcher>

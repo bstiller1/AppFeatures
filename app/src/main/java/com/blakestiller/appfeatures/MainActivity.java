@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
             }
         });
         final ViewSwitcher viewSwitcher = (ViewSwitcher)findViewById(R.id.viewSwitcher1);
-        final View myFirstView= findViewById(R.id.view1);
+        final View myFirstView = findViewById(R.id.view1);
         final View mySecondView = findViewById(R.id.view2);
         final Button button1 = (Button) findViewById(R.id.button1);
         final Button button2 = (Button) findViewById(R.id.button2);
