@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppFeatures</string>
+    <string name="textView">Hello Android!</string>
+    <string name="textView1">Hello View 2!</string>
+    <string name="editText">First Name</string>
+    <string name="editText2">Last Name</string>
+    <string name="button">Submit</string>
+    <string name="button1">Switch</string>
+</resources>
